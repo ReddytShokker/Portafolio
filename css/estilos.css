@@ -1,0 +1,113 @@
+﻿body {
+    font-family: Times New Roman, Nimbus Roman;
+    margin: 0;
+    padding: 0;
+    background-color: #EDE7F6;
+}
+
+.fuente-cursiva {
+    font-family: 'Dancing Script', cursive;
+}
+
+header, section {
+    padding: 20px;
+    text-align: center;
+}
+
+.centrado-texto {
+    text-align: center;
+}
+
+.foto-perfil {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.frase-dinamica {
+    font-style: italic;
+    font-size: 1.5em;
+    color: #D81B60;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #4A148C;
+    width: fit-content;
+    animation: blink 0.7s step-end infinite;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #4A148C
+    }
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+}
+
+.img-proyecto {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.iconos-tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+    .iconos-tecnologias img {
+        width: 250px;
+        height: 250px;
+    }
+
+
+
+#cambiarBtn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #673AB7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Times New Roman, serif;
+}
+
+    #cambiarBtn:hover {
+        background-color: #5E35B1;
+    }
